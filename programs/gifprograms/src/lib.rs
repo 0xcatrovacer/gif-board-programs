@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("9BNVHqRvQxAzwgR53bUYFSmE8sXAq9oQB9EtAa9Py3qX");
 
 #[program]
 pub mod gifprograms {
