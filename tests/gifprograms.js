@@ -1,6 +1,5 @@
 const anchor = require("@project-serum/anchor");
 
-// Need the system program, will talk about this soon.
 const { SystemProgram } = anchor.web3;
 
 const main = async () => {
@@ -9,11 +8,11 @@ const main = async () => {
     const provider = anchor.Provider.env();
     anchor.setProvider(provider);
 
-    const program = anchor.workspace.Myepicproject;
+    const program = anchor.workspace.Gifprograms;
 
     const baseAccount = anchor.web3.Keypair.generate();
 
-    let tx = await program.rpc.startStuffOff({
+    let tx = await program.rpc.initialize({
         accounts: {
             baseAccount: baseAccount.publicKey,
             user: provider.wallet.publicKey,
